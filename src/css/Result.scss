@@ -1,0 +1,83 @@
+@import './App.scss';
+
+.containerCard {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: hsla(0, 100%, 100%, 0.8)
+    }    
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    margin: 0;
+    padding: 20px 10px;
+    border-radius: 30px;
+    width: 50%;
+    background-image: linear-gradient($gradiant1, $gradiant2);
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 20px 0;
+
+        .roundedScore {
+                margin: 10px 0;
+                justify-self: center;
+                align-self: center;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-image: linear-gradient($gradient3, $gradient4);
+        
+                span {
+                    margin-top: 25%;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 5rem;
+                    font-weight: 700;
+                    color: white;
+                }
+                p{
+                    color: hsla(0, 100%, 100%, 0.5)
+                }
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        .scoreText{
+            align-self: center;
+            margin-top: -10px;
+            width: 60% ;
+            color: hsla(0, 100%, 100%, 0.7)
+        }
+    }
+}
+
+
+// MEDIA QUERY
+@media (max-width: 375px) {
+    .containerCard{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        .card{
+            padding-top: 250px;
+            .roundedScore{
+                width: 150px;
+                height: 150px;
+                margin: 5px 0;
+                span{
+                    font-size: 3.4rem;
+                    font-weight: 500;
+                }
+            }
+            .scoreText{
+                width: 80%;
+            }
+        }
+    }
+}

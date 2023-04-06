@@ -1,0 +1,122 @@
+@import '../css/App.scss';
+
+@mixin scoreTags($color){
+    border: none;
+    p { 
+        margin-left: 10px;  
+        color: $color
+    }
+    background-color: rgba($color, 0.1);
+}
+ 
+.containerSummary{
+    padding: 15px 5px;
+    width: 50%;
+    border-radius: 30px;
+    h3{
+        text-align: left;
+        margin-left: 10%;
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    .wrapperSummary{
+        .summaryScore {
+            display: flex;
+            margin: 20px auto;
+            padding: 0 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            width: 80%;
+
+            .floatL {display: flex;}
+
+            span{
+                span{color: hsla(0, 0%, 50%, 0.8)}
+            }
+        }
+        .summaryScore.Reaction{
+           @include scoreTags($red)
+        }
+        .summaryScore.Memory {
+            @include scoreTags($yellow)
+        }
+        .summaryScore.Verbal{
+            @include scoreTags($green)
+        }
+        .summaryScore.Visual{
+            @include scoreTags($blue)
+        }
+        
+        .btn {
+            margin-top: 25px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            height: 50px;
+            width: 85%;
+            background: #333b58;
+            color: white;   
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-image: linear-gradient($gradiant1, $gradiant2);
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .containerSummary{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        .wrapperSummary{
+        .summaryScore {
+            display: flex;
+            margin: 20px auto;
+            padding: 0 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            width: 80%;
+
+            .floatL {display: flex;}
+
+            span{
+                span{color: hsla(0, 0%, 50%, 0.8)}
+            }
+        }
+        .summaryScore.Reaction{
+           @include scoreTags($red)
+        }
+        .summaryScore.Memory {
+            @include scoreTags($yellow)
+        }
+        .summaryScore.Verbal{
+            @include scoreTags($green)
+        }
+        .summaryScore.Visual{
+            @include scoreTags($blue)
+        }
+        
+        .btn {
+            margin-top: 25px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            height: 50px;
+            width: 85%;
+            background: #333b58;
+            color: white;   
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-image: linear-gradient($gradiant1, $gradiant2);
+        }
+    }
+    }
+}
