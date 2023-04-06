@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Shoity/Summary/static/css/main.af5c515b.css",
+    "main.js": "/Shoity/Summary/static/js/main.c4966377.js",
+    "static/js/496.09e8fced.chunk.js": "/Shoity/Summary/static/js/496.09e8fced.chunk.js",
+    "index.html": "/Shoity/Summary/index.html",
+    "main.af5c515b.css.map": "/Shoity/Summary/static/css/main.af5c515b.css.map",
+    "main.c4966377.js.map": "/Shoity/Summary/static/js/main.c4966377.js.map",
+    "496.09e8fced.chunk.js.map": "/Shoity/Summary/static/js/496.09e8fced.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af5c515b.css",
+    "static/js/main.c4966377.js"
+  ]
+}
