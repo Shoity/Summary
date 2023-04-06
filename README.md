@@ -26,6 +26,16 @@ Users should be able to:
 
 ### Screenshot
 
+Desktop version -
+
+![summary1](https://user-images.githubusercontent.com/89661625/230252671-d6782950-bd39-4211-a18e-082d4040f309.png)
+
+
+Mobile version -
+
+![summary2](https://user-images.githubusercontent.com/89661625/230252680-fac37690-e3c2-4042-953e-8e240f6c7e69.png)
+
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
